@@ -1,11 +1,11 @@
 main() {
-  double raiting = 4.5;
-  var b = raiting % 4;
-  var c = raiting ~/ 4;
-  bool d = c == 1;
-  bool e = c != 1;
-  print(b);
-  print(c);
-  print(d);
-  print(e);
+  const pi = 'Const variable cannot be changed';
+  final pi2 = 'Final variable cannot be changed too';
+
+  final date =
+      DateTime.now(); //Будет показывать дату в момент запуска программы
+
+  print(pi);
+  print(pi2);
+  print(date);
 }
