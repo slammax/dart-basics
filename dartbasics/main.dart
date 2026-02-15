@@ -1,20 +1,43 @@
 void main() {
-  final students = <String, double>{
-    'Макс': 4.5,
-    'Вера': 2,
-    'Саша': 3.4,
-    'Коля': 5,
-  };
-  print(students);
+  if (1 < 2) {
+    print('Правда');
+  } else {
+    print('Ложь');
+  }
+  ;
 
-  students['Миша'] = 3.6;
-  print(students);
+  final students = <String>['Вася', 'Макс'];
+  if (students.contains('Настя')) {
+    print('Правда, есть Настя');
+  } else if (students.contains('Макс')) {
+    print('Правда, есть Макс');
+  } else {
+    print('Ложь');
+  }
+  ;
 
-  students.addAll({'Женя': 2, 'Юра': 3.4});
-  print(students);
+  var temp = 45;
+  if (temp > -20) {
+    if (temp < 30) {
+      print('Отличная погода для прогулки');
+    } else {
+      print('Не стоит идти гулять');
+    }
+  } else {
+    print('Не стоит идти гулять');
+  }
 
-  print(students.length);
+  var temp2 = 23;
 
-  print(students.keys.toList());
-  print(students.values.toList());
+  if (temp2 > -20 && temp2 < 30) {
+    print('Отличная погода для прогулки');
+  } else {
+    print('Не стоит идти гулять');
+  }
+
+  if (temp2 < -20 || temp2 > 30) {
+    print('Не стоит идти гулять');
+    return;
+  }
+  print('Отличная погода для прогулки');
 }
