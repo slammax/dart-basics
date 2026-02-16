@@ -39,6 +39,9 @@ void main() {
   final students2 = <String>['Петя', 'Женя', 'Саша', 'Петя'];
   print(students2);
 
-  final classes = <String>{'1a', '1b', '1a'}; // только уникальные значения
+  final classes = <String>{
+    '1a',
+    '1b',
+  }; // только уникальные значения, дубли не выводятся в терминал (и лучше их не делать)
   print(classes);
 }
